@@ -1,0 +1,595 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family:system-ui, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* Header CSS */
+header{
+    height: 77px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+}
+.sticky{
+    background-color: #2a2f4a;
+    z-index: 1000;
+}
+header #logo{
+    text-decoration: none;
+    margin-left: 30px;
+    color: white;
+    font-weight: 600;
+    font-size: larger;
+    letter-spacing: 0.25em;
+    line-height: 3.8em;
+    background:none;
+    position: relative;
+}
+header a strong{
+    background-color: #ffffff;
+    color: #242943;
+    display: inline-flex;
+    line-height: 1.65em;
+    margin-right: 0.325em;
+    padding: 0 0.125em 0 0.375em;
+    font-weight: 600;
+}
+header a:hover strong{
+    background: #9bf1ff !important;
+}
+header a:hover span{
+    color: #9bf1ff !important;
+}
+#menu{
+    background: #1b1e2ff2 !important;
+    height: 100vh !important;
+}
+.menu{
+    box-shadow: none;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    visibility:hidden;
+    text-align: center;
+}
+.open-menu{
+    position: absolute;
+    z-index: 1000000 !important;
+    top: 0;
+    visibility: visible !important;
+    background: rgba(36, 41, 67, 0.9) !important;
+    height: 100vh !important;
+}
+.open-menu div{
+    background: #1b1e2ff2 !important;
+    height: 100vh !important;
+}
+#close{
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: rgb(253 253 253 / 73%);
+    transition: color 0.2s ease-in-out, color 0.2s ease-in-out;
+    font-size: 45px;
+    position: relative;
+    float: right;
+    font-weight: 100;
+    margin: 5px 10px 1px;
+}
+#close:hover{
+    color: #9bf1ff;
+}
+.menu .links{
+    list-style: none;
+    padding-top: 160px;
+    margin: 0% auto;
+}
+.menu .buttons{
+    list-style: none;
+    margin: 0% auto; 
+}
+
+.links li {
+    text-align: -webkit-center;
+    width: 21%;
+    margin: auto;
+    font-weight: 100;
+}
+#gst{
+    background: white;
+    transition: color 0.2s ease-in-out, color 0.2s ease-in-out;
+    color: #242943;
+    width: 21%;
+    margin: auto;
+}
+#gst:hover{
+    background: #9bf1ff !important;
+}
+#gst a {
+    color: #242943 !important;
+    font-size: 20px;
+}
+#login{
+    border: 3px solid white;
+    transition: color 0.2s ease-in-out, color 0.2s ease-in-out;
+    color:white;
+    width: 21%;
+    margin: auto;
+    margin-bottom: 100px;
+}
+#login:hover{
+    border:3px solid #9bf1ff !important;
+}
+#login:hover a{
+    color:#9bf1ff !important;
+}
+.buttons a{
+    text-decoration: none;
+    margin-left: 30px;
+    color: white !important;
+    font-size: larger;
+    letter-spacing: 0.25em;
+    line-height: 3.8em;
+    background:none;
+    font-weight: 600;
+    padding-top: 10px !important;
+
+}
+
+.buttons a {
+    text-decoration: none;
+}
+.links a {
+    text-decoration: none;
+    margin-left: 30px;
+    color: white !important;
+    font-size: larger;
+    letter-spacing: 0.25em;
+    line-height: 3.8em;
+    background:none;
+    font-weight: 600;
+}
+header nav{
+    display: inline;
+}
+#btn{
+    cursor: pointer;
+    position: relative;
+    float: right;
+    background: none;
+    border: none;
+    font-size: larger;
+    color: white;
+    transition: color 0.2s ease-in-out, color 0.2s ease-in-out;
+    line-height: 3.6em;
+    font-weight: 600;
+    letter-spacing: 0.25em;
+    margin: 0px 7px;
+}
+#btn:hover{
+    color: #9bf1ff;
+}
+#btn .fa{
+    font-size:30px;
+    font-weight:lighter;
+}
+
+
+
+
+/* Banner CSS */
+.head{
+    background-attachment: scroll;
+    background-image: url(./img/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 85vh;
+    
+}
+.head div{
+    margin: 0;
+    padding: 0;
+    background-color:#282b45d9 !important;
+    height: -webkit-fill-available;
+}
+#banner{
+    color: white;
+    margin: -62px 170px 0px;
+}
+#banner .line{
+    height: 1px;
+    background: white;
+    width: 82%;
+}
+#banner h1{
+    font-size: 74px;
+    font-weight: 600;
+    margin-bottom: 40px;
+    padding: 264px 1px 0px;
+}
+#banner p{
+    display: inline-flex;
+    width: 40%;
+    font-size: 18px;
+    letter-spacing: 3px;
+    font-weight: 600;
+    margin-top: 50px;
+}
+#getstart{
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 0.2em;
+    color: white;
+    border: 3px solid #fff;
+    transition: color 0.2s ease-in-out, color 0.2s ease-in-out;
+    padding: 20px 30px;
+    text-decoration: none;
+}#getstart:hover{
+    color: #9bf1ff !important;
+    border: 3px solid #9bf1ff !important;
+}
+#getstart i{
+    font-size: 23px;
+    font-weight: 100;
+    font-stretch: expanded;
+}
+
+
+
+/* Articles CSS */
+.art-1{
+    height: 500px;
+    width: 40%;
+    background-image: url(img/article_1.jpg);
+    background-position:bottom;
+    background-size: cover;
+    z-index: 0;
+}
+.art-2{
+    height: 500px;
+    width: 60%;
+    background-image: url(img/article_2.jpg);
+    background-size: cover;
+}
+.art-3{
+    height: 500px;
+    width: 60%;
+    background-image: url(img/article_3.jpg);
+    background-position:bottom;
+    background-size: cover;
+}
+.art-4{
+    height: 500px;
+    width: 40%;
+    background-image: url(img/article_4.jpg);
+    background-position:bottom;
+    background-size: cover;
+}
+.art-5{
+    height: 500px;
+    width: 40%;
+    background-image: url(img/article_5.jpg);
+    background-position:bottom;
+    background-size: cover;
+}
+.art-6{
+    height: 500px;
+    width: 60%;
+    background-image: url(img/article_6.jpg);
+    background-position:bottom;
+    background-size: cover;
+}
+.art-body{
+    padding: 17% 20% 20% 10%;
+    height: 220px;
+}
+.cover{
+    position: relative;
+    height: 100%;
+    cursor: pointer;
+    z-index: 4;
+    display: block;
+}
+
+.art-1 .cover{ 
+    top: -100.1%;
+    background-color: #79bfd9e2 !important;
+    
+}
+.art-2 .cover{
+    
+    top: -128.1%;
+    background-color: #837ab7de !important;
+
+}
+.art-3 .cover{
+  
+    top: -128%;
+    background-color: #e59289da !important;
+
+}
+.art-4 .cover{
+  
+    top: -100.1%;
+    background-color: #ddb58fde !important;
+
+}
+.art-5 .cover{
+  
+    top: -100%;
+    background-color: #849cd2da !important;
+
+}
+.art-6 .cover{
+    top: -128.1%;
+    background-color: #7aae96e0 !important;
+}
+.cover:hover{
+    opacity:0;
+    transition-duration: 0.7s;
+}
+
+
+.art-body h3{
+    text-decoration: none;
+    font-size: 41px;
+    font-weight: 600;
+    border-bottom: 3px solid white;
+    padding: 27px 0px;
+    width: 52%;
+    margin: 20px 0px;
+    position: sticky;
+    z-index: 20;
+}
+.art-body a{
+    text-decoration: none;
+    color: white !important;
+    cursor: pointer;
+    position: sticky;
+    z-index: 20;
+}
+.art-body p{
+    color: white;
+    letter-spacing: 4px;
+    font-weight: 600;
+    position: sticky;
+    z-index: 20;
+}
+main #articles .rows{
+    display: flex;
+}
+
+
+
+/* Box CSS */
+.box{
+    padding: 4em 0 2em 0;
+    margin: 0 auto;
+    width: 82%;
+    height: 463px;
+}
+.box h2{
+    font-size: 40px;
+    color: white;
+    font-weight: 600;
+    border-bottom: 3px solid white;
+    padding: 10px 0px 23px;
+    width: 245px;
+}
+.box p{
+    font-size: 22px;
+    line-height: 40px;
+    color: white;
+    font-weight: 100;
+    margin: 0px 0px 40px;
+    letter-spacing: 1px;
+
+}
+/* Form CSS */
+.tab-form{
+    background: #242943;
+    height: 840px;
+    border-bottom: 2px solid #2a2f4a;
+}
+
+
+.left{
+    width: 3%;
+}
+.right{
+    width: 20%;
+}
+#form-area{
+    width: 77%;
+    margin: 0px 50px 0px 170px;
+    padding-top: 90px;
+    height:745px;
+}
+form div{
+    display: inline-block;
+}
+.int label{
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 5px;
+    padding-bottom: 10px;
+}
+.mail label{
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 5px;
+    padding-bottom: 10px;
+}
+.area label{
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 5px;
+}
+.int input{
+    width: 405px;
+    height: 60px;
+    background-color: #2a2f4a;
+    border: none;
+    margin-top: 20px;
+    margin-right: 12px;
+    margin-bottom:20px ;
+}
+.mail input{
+    width: 405px;
+    height: 60px;
+    background-color: #2a2f4a;
+    border: none;
+    margin-top: 20px;
+}
+.area textarea{
+    height: 280px;
+    width: 812px;
+    background-color: #2a2f4a;
+    border: none;
+    margin-top: 20px;
+}
+.form-btn{
+    list-style: none;
+    display: inline-flex;
+    padding: 0;
+}
+#send-btn{
+        color: #242943;
+        font-size: 18px;
+        font-weight: 100;
+        letter-spacing: 5px;
+        padding: 24px 30px;
+        background: white;
+        margin-top: 20px;
+}
+#reset-btn{
+    color: white;
+    font-size: 18px;
+    font-weight: 100;
+    letter-spacing: 5px;
+    padding: 22px 30px;
+    background-color: #242943;
+    margin-top: 22px;
+    margin-left: 20px;
+    border: 2px solid;
+}
+.right div{
+    height: 277px;
+    border-bottom: 3px solid #2a2f4a;
+    border-left: 3px solid #2a2f4a;
+}
+#mail-box h3{
+    color: white;
+    display: inline-block;
+    font-size: 30px;
+}
+#mail-box i{
+    font-size: 25px;
+    line-height: 50px;
+    padding: 0px 13px;
+    margin: 66px 35px 25px 60px;
+    background: white;
+    border-radius: 50%;
+    
+}
+#mail-box a{
+    font-size: 25px;
+    color: white !important;
+    text-decoration: 1px underline dotted;
+    margin-left: 153px;
+}
+#phone-box h3{
+    color: white;
+    display: inline-block;
+    font-size: 30px;
+}
+#phone-box i{
+    font-size: 30px;
+    line-height: 50px;
+    padding: 0px 13px;
+    margin: 66px 35px 25px 60px;
+    background: white;
+    border-radius: 50%;
+}
+#phone-box p{
+    font-size: 23px;
+    color: white !important;
+    margin: 7px 153px;
+    font-weight: 100;
+}
+#address-box h3{
+    color: white;
+    display: inline-block;
+    font-size: 30px;
+}
+#address-box i{
+    font-size: 30px;
+    line-height: 50px;
+    padding: 0px 13px;
+    margin: 66px 35px 25px 60px;
+    background: white;
+    border-radius: 50%;
+}
+#address-box p{
+    font-size: 23px;
+    color: white !important;
+    margin: 7px 153px;
+    font-weight: 100;
+}
+.gst{
+    background: white !important;
+    color: #242943 !important;
+}
+#login{
+    margin-top: 20px;
+}
+
+
+/* Footer CSS */
+footer{
+    height: 300px;
+    height: 307px;
+    background: #242943;
+}
+footer ul{
+    list-style: none;
+    
+}
+#icon-text{
+    color: #424253;
+    display:flex;
+    font-family: system-ui, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, sans-serif;
+    font-weight: lighter;
+    color: rgba(244, 244, 255, 0.2);
+    margin-left: 100px;
+    letter-spacing: 1px;
+}
+#icon{
+    font-size: 25px;
+    display: inline-flex;
+    text-align: center;
+    margin: 85px 1px 35px 80px;
+}
+#icon li i{
+    background-color: white;
+    width: 50px;
+    height: 37px;
+    border-radius: 50%;
+    padding-top: 12px;
+    margin-left: 26px;
+}
+#icon-text li a{
+    color: rgba(244, 244, 255, 0.2);
+}
+#design{
+    margin-left: 10px;
+}
